@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj",
+        "projectName": "TodoApp",
+        "projectPath": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj",
+        "packagesPath": "C:\\Users\\Harun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Microsoft.SqlServer.SqlManagementObjects": {
+              "target": "Package",
+              "version": "[161.44091.28, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

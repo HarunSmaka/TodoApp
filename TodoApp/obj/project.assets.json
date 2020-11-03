@@ -1,0 +1,1736 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Dapper/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Dapper.dll": {}
+        }
+      },
+      "Microsoft.Data.SqlClient/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient.SNI": "2.0.0",
+          "Microsoft.Identity.Client": "4.14.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "resource": {
+          "lib/net46/de/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/Microsoft.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI/2.0.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
+        }
+      },
+      "Microsoft.Identity.Client/4.14.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Drawing",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "ref/net45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.6.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Management.SqlParser/160.20216.14": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/161.44091.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "2.0.0",
+          "Microsoft.SqlServer.Management.SqlParser": "160.20216.14",
+          "NewtonSoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Dapper/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Dapper.dll": {}
+        }
+      },
+      "Microsoft.Data.SqlClient/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient.SNI": "2.0.0",
+          "Microsoft.Identity.Client": "4.14.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "resource": {
+          "lib/net46/de/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI/2.0.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
+        }
+      },
+      "Microsoft.Identity.Client/4.14.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Drawing",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "ref/net45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.6.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Management.SqlParser/160.20216.14": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/161.44091.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "2.0.0",
+          "Microsoft.SqlServer.Management.SqlParser": "160.20216.14",
+          "NewtonSoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Dapper/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Dapper.dll": {}
+        }
+      },
+      "Microsoft.Data.SqlClient/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient.SNI": "2.0.0",
+          "Microsoft.Identity.Client": "4.14.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "resource": {
+          "lib/net46/de/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI/2.0.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
+        }
+      },
+      "Microsoft.Identity.Client/4.14.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Drawing",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "ref/net45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.6.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Management.SqlParser/160.20216.14": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/161.44091.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "2.0.0",
+          "Microsoft.SqlServer.Management.SqlParser": "160.20216.14",
+          "NewtonSoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Dapper/2.0.35": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Dapper.dll": {}
+        }
+      },
+      "Microsoft.Data.SqlClient/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient.SNI": "2.0.0",
+          "Microsoft.Identity.Client": "4.14.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "System.Data",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Data.SqlClient.dll": {}
+        },
+        "resource": {
+          "lib/net46/de/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Data.SqlClient.SNI/2.0.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets": {}
+        }
+      },
+      "Microsoft.Identity.Client/4.14.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Drawing",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "ref/net45/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols": "5.6.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Management.SqlParser/160.20216.14": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/161.44091.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "2.0.0",
+          "Microsoft.SqlServer.Management.SqlParser": "160.20216.14",
+          "NewtonSoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.Types.dll": {},
+          "lib/net462/Microsoft.SqlServer.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net462/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Assessment.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrData.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll": {},
+          "lib/net462/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net462/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net462/Microsoft.SqlServer.WmiEnum.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.6.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dapper/2.0.35": {
+      "sha512": "/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
+      "type": "package",
+      "path": "dapper/2.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapper.2.0.35.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Microsoft.Data.SqlClient/2.0.0": {
+      "sha512": "VjiEHD6trNW5nedq/nKhV7vFSPZrAUdT8pF3hHCyv8ATGBAOSu0XKZIAIEYomguO0+B4LTZnJ6ifPqlkC2fEKw==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnet.png",
+        "lib/net46/Microsoft.Data.SqlClient.dll",
+        "lib/net46/Microsoft.Data.SqlClient.pdb",
+        "lib/net46/Microsoft.Data.SqlClient.xml",
+        "lib/net46/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
+        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
+        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
+        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
+        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
+        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.xml",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
+        "lib/netstandard2.0/Microsoft.Data.SqlClient.xml",
+        "microsoft.data.sqlclient.2.0.0.nupkg.sha512",
+        "microsoft.data.sqlclient.nuspec",
+        "ref/net46/Microsoft.Data.SqlClient.dll",
+        "ref/net46/Microsoft.Data.SqlClient.pdb",
+        "ref/net46/Microsoft.Data.SqlClient.xml",
+        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
+        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
+        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
+        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
+        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
+        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.xml",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.pdb",
+        "ref/netstandard2.0/Microsoft.Data.SqlClient.xml",
+        "runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
+        "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb"
+      ]
+    },
+    "Microsoft.Data.SqlClient.SNI/2.0.0": {
+      "sha512": "MjGS4HyD6QaOJjAh5HYGGVMOxuC7r36SkJI3Dc0HRfKVg4zRRJI9tMAHi3V7BiAtP5OKQtuVwaXvjOvpzPtCGw==",
+      "type": "package",
+      "path": "microsoft.data.sqlclient.sni/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net46/Microsoft.Data.SqlClient.SNI.targets",
+        "build/net46/Microsoft.Data.SqlClient.SNI.x64.dll",
+        "build/net46/Microsoft.Data.SqlClient.SNI.x64.pdb",
+        "build/net46/Microsoft.Data.SqlClient.SNI.x86.dll",
+        "build/net46/Microsoft.Data.SqlClient.SNI.x86.pdb",
+        "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.targets",
+        "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.x64.dll",
+        "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.x64.pdb",
+        "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.x86.dll",
+        "buildTransitive/net46/Microsoft.Data.SqlClient.SNI.x86.pdb",
+        "dotnet.png",
+        "microsoft.data.sqlclient.sni.2.0.0.nupkg.sha512",
+        "microsoft.data.sqlclient.sni.nuspec"
+      ]
+    },
+    "Microsoft.Identity.Client/4.14.0": {
+      "sha512": "Etqux6Zuuv1yEN4UwKbAn6EZv0Rooc+vM4N9z7gxmeT7dyoKlXIRN44DQPzD9LV1CW0KsTVqH+2B42p1NKqPlQ==",
+      "type": "package",
+      "path": "microsoft.identity.client/4.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Microsoft.Identity.Client.dll",
+        "lib/monoandroid90/Microsoft.Identity.Client.xml",
+        "lib/net45/Microsoft.Identity.Client.dll",
+        "lib/net45/Microsoft.Identity.Client.xml",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
+        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
+        "lib/netstandard1.3/Microsoft.Identity.Client.xml",
+        "lib/uap10.0/Microsoft.Identity.Client.dll",
+        "lib/uap10.0/Microsoft.Identity.Client.pri",
+        "lib/uap10.0/Microsoft.Identity.Client.xml",
+        "lib/xamarinios10/Microsoft.Identity.Client.dll",
+        "lib/xamarinios10/Microsoft.Identity.Client.xml",
+        "lib/xamarinmac20/Microsoft.Identity.Client.dll",
+        "lib/xamarinmac20/Microsoft.Identity.Client.xml",
+        "microsoft.identity.client.4.14.0.nupkg.sha512",
+        "microsoft.identity.client.nuspec",
+        "ref/MonoAndroid9.0/Microsoft.Identity.Client.dll",
+        "ref/MonoAndroid9.0/Microsoft.Identity.Client.xml",
+        "ref/Xamarin.iOS10/Microsoft.Identity.Client.dll",
+        "ref/Xamarin.iOS10/Microsoft.Identity.Client.xml",
+        "ref/net45/Microsoft.Identity.Client.dll",
+        "ref/net45/Microsoft.Identity.Client.xml",
+        "ref/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "ref/netcoreapp2.1/Microsoft.Identity.Client.xml",
+        "ref/netstandard1.3/Microsoft.Identity.Client.dll",
+        "ref/netstandard1.3/Microsoft.Identity.Client.xml",
+        "ref/uap10.0/Microsoft.Identity.Client.dll",
+        "ref/uap10.0/Microsoft.Identity.Client.xml",
+        "ref/xamarinmac20/Microsoft.Identity.Client.dll",
+        "ref/xamarinmac20/Microsoft.Identity.Client.xml"
+      ]
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/5.6.0": {
+      "sha512": "0q0U1W+gX1jmfmv7uU7GXFGB518atmSwucxsVwPGpuaGS3jwd2tUi+Gau+ezxR6oAFEBFKG9lz/fxRZzGMeDXg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.jsonwebtokens/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/5.6.0": {
+      "sha512": "zEDrfEVW5x5w2hbTV94WwAcWvtue5hNTXYqoPh3ypF6U8csm09JazEYy+VPp2RtczkyMfcsvWY9Fea17e+isYQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Logging.dll",
+        "lib/net45/Microsoft.IdentityModel.Logging.xml",
+        "lib/net451/Microsoft.IdentityModel.Logging.dll",
+        "lib/net451/Microsoft.IdentityModel.Logging.xml",
+        "lib/net461/Microsoft.IdentityModel.Logging.dll",
+        "lib/net461/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
+        "microsoft.identitymodel.logging.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols/5.6.0": {
+      "sha512": "ei7YqYx0pIFL6JjK8ZnPK0MXZRWUNHtJPUl3KqSvj9+2f5CMa6GRSEC+BMDHr17tP6yujYUg0IQOcKzmC7qN5g==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net451/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
+        "microsoft.identitymodel.protocols.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.6.0": {
+      "sha512": "yh3n+uXiwpBy/5+t67tYcmRxb9kwQdaKRyG/DNipRMF37bg5Jr0vENOo1BQz6OySMl5WIK544SzPjtr7/KkucA==",
+      "type": "package",
+      "path": "microsoft.identitymodel.protocols.openidconnect/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net451/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
+        "microsoft.identitymodel.protocols.openidconnect.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.protocols.openidconnect.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/5.6.0": {
+      "sha512": "C3OqR3QfBQ7wcC7yAsdMQqay87OsV6yWPYG/Ai3n7dvmWIGkouQhXoVxRP0xz3cAFL4hxZBXyw4aLTC421PaMg==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net45/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net451/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net451/Microsoft.IdentityModel.Tokens.xml",
+        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.SqlServer.Management.SqlParser/160.20216.14": {
+      "sha512": "Csaq4k+yr4QtLRcfw/oCLyiJjZQe6u/1BPGUG1hkz2tplh8+821Y5TkS2bE8/Umy/5oL5EChYfH0fsT13ZvaYA==",
+      "type": "package",
+      "path": "microsoft.sqlserver.management.sqlparser/160.20216.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net462/Microsoft.SqlServer.Management.SqlParser.dll",
+        "lib/net462/Microsoft.SqlServer.Management.SqlParser.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.SqlParser.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlParser.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlParser.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlParser.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlParser.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlParser.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlParser.xml",
+        "microsoft.sqlserver.management.sqlparser.160.20216.14.nupkg.sha512",
+        "microsoft.sqlserver.management.sqlparser.nuspec",
+        "nuspecicon.png"
+      ]
+    },
+    "Microsoft.SqlServer.SqlManagementObjects/161.44091.28": {
+      "sha512": "ogo9PJ4lcHGytLE9098UWWdifG7vPXeDbjrN4OO1EWkWSSgNdxmcn2dWw771hgjyOoXMVi/cTCCTmDoxvR0xsA==",
+      "type": "package",
+      "path": "microsoft.sqlserver.sqlmanagementobjects/161.44091.28",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.dll",
+        "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.pdb",
+        "lib/net462/Microsoft.Data.Tools.Sql.BatchParser.xml",
+        "lib/net462/Microsoft.SqlServer.Assessment.Types.dll",
+        "lib/net462/Microsoft.SqlServer.Assessment.dll",
+        "lib/net462/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/net462/Microsoft.SqlServer.ConnectionInfo.pdb",
+        "lib/net462/Microsoft.SqlServer.ConnectionInfo.xml",
+        "lib/net462/Microsoft.SqlServer.Dmf.Common.dll",
+        "lib/net462/Microsoft.SqlServer.Dmf.Common.pdb",
+        "lib/net462/Microsoft.SqlServer.Dmf.Common.xml",
+        "lib/net462/Microsoft.SqlServer.Dmf.dll",
+        "lib/net462/Microsoft.SqlServer.Dmf.pdb",
+        "lib/net462/Microsoft.SqlServer.Dmf.xml",
+        "lib/net462/Microsoft.SqlServer.Management.Assessment.dll",
+        "lib/net462/Microsoft.SqlServer.Management.Assessment.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.Assessment.xml",
+        "lib/net462/Microsoft.SqlServer.Management.Collector.dll",
+        "lib/net462/Microsoft.SqlServer.Management.Collector.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.Collector.xml",
+        "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.dll",
+        "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.CollectorEnum.xml",
+        "lib/net462/Microsoft.SqlServer.Management.HadrData.dll",
+        "lib/net462/Microsoft.SqlServer.Management.HadrData.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.HadrData.xml",
+        "lib/net462/Microsoft.SqlServer.Management.HadrModel.dll",
+        "lib/net462/Microsoft.SqlServer.Management.HadrModel.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.HadrModel.xml",
+        "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.dll",
+        "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.RegisteredServers.xml",
+        "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.Sdk.Sfc.xml",
+        "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.dll",
+        "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.SmoMetadataProvider.xml",
+        "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.dll",
+        "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.SqlScriptPublish.xml",
+        "lib/net462/Microsoft.SqlServer.Management.XEvent.dll",
+        "lib/net462/Microsoft.SqlServer.Management.XEvent.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.XEvent.xml",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.dll",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScoped.xml",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.XEventDbScopedEnum.xml",
+        "lib/net462/Microsoft.SqlServer.Management.XEventEnum.dll",
+        "lib/net462/Microsoft.SqlServer.Management.XEventEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.Management.XEventEnum.xml",
+        "lib/net462/Microsoft.SqlServer.PolicyEnum.dll",
+        "lib/net462/Microsoft.SqlServer.PolicyEnum.xml",
+        "lib/net462/Microsoft.SqlServer.RegSvrEnum.dll",
+        "lib/net462/Microsoft.SqlServer.RegSvrEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.RegSvrEnum.xml",
+        "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.dll",
+        "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.ServiceBrokerEnum.xml",
+        "lib/net462/Microsoft.SqlServer.Smo.Notebook.dll",
+        "lib/net462/Microsoft.SqlServer.Smo.Notebook.pdb",
+        "lib/net462/Microsoft.SqlServer.Smo.Notebook.xml",
+        "lib/net462/Microsoft.SqlServer.Smo.dll",
+        "lib/net462/Microsoft.SqlServer.Smo.pdb",
+        "lib/net462/Microsoft.SqlServer.Smo.xml",
+        "lib/net462/Microsoft.SqlServer.SmoExtended.dll",
+        "lib/net462/Microsoft.SqlServer.SmoExtended.pdb",
+        "lib/net462/Microsoft.SqlServer.SmoExtended.xml",
+        "lib/net462/Microsoft.SqlServer.SqlClrProvider.dll",
+        "lib/net462/Microsoft.SqlServer.SqlClrProvider.pdb",
+        "lib/net462/Microsoft.SqlServer.SqlEnum.dll",
+        "lib/net462/Microsoft.SqlServer.SqlEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.SqlEnum.xml",
+        "lib/net462/Microsoft.SqlServer.SqlWmiManagement.dll",
+        "lib/net462/Microsoft.SqlServer.SqlWmiManagement.pdb",
+        "lib/net462/Microsoft.SqlServer.SqlWmiManagement.xml",
+        "lib/net462/Microsoft.SqlServer.WmiEnum.dll",
+        "lib/net462/Microsoft.SqlServer.WmiEnum.pdb",
+        "lib/net462/Microsoft.SqlServer.WmiEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.Data.Tools.Sql.BatchParser.dll",
+        "lib/netcoreapp3.1/Microsoft.Data.Tools.Sql.BatchParser.pdb",
+        "lib/netcoreapp3.1/Microsoft.Data.Tools.Sql.BatchParser.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Assessment.Types.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Assessment.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ConnectionInfo.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ConnectionInfo.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.Common.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.Common.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.Common.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Dmf.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Assessment.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Assessment.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Assessment.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Collector.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Collector.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Collector.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.CollectorEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.CollectorEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.CollectorEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrData.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrData.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrData.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrModel.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrModel.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.HadrModel.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.RegisteredServers.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.RegisteredServers.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.RegisteredServers.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Sdk.Sfc.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.Sdk.Sfc.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SmoMetadataProvider.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SmoMetadataProvider.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SmoMetadataProvider.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlScriptPublish.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlScriptPublish.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.SqlScriptPublish.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEvent.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEvent.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEvent.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScoped.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScoped.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScoped.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScopedEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventDbScopedEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Management.XEventEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.PolicyEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.PolicyEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.PolicyEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ServiceBrokerEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ServiceBrokerEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.ServiceBrokerEnum.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.Notebook.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.Notebook.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.Notebook.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.Smo.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SmoExtended.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SmoExtended.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SmoExtended.xml",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SqlEnum.dll",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SqlEnum.pdb",
+        "lib/netcoreapp3.1/Microsoft.SqlServer.SqlEnum.xml",
+        "lib/netstandard2.0/Microsoft.Data.Tools.Sql.BatchParser.dll",
+        "lib/netstandard2.0/Microsoft.Data.Tools.Sql.BatchParser.pdb",
+        "lib/netstandard2.0/Microsoft.Data.Tools.Sql.BatchParser.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Assessment.Types.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Assessment.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.ConnectionInfo.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.ConnectionInfo.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.Common.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.Common.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.Common.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Dmf.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Assessment.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Assessment.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Assessment.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Collector.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Collector.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Collector.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.CollectorEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.CollectorEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.CollectorEnum.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrData.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrData.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrData.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrModel.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrModel.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.HadrModel.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.RegisteredServers.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.RegisteredServers.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.RegisteredServers.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Sdk.Sfc.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Sdk.Sfc.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SmoMetadataProvider.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SmoMetadataProvider.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SmoMetadataProvider.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlScriptPublish.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlScriptPublish.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlScriptPublish.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEvent.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEvent.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEvent.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScoped.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScoped.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScoped.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScopedEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScopedEnum.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventEnum.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.PolicyEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.PolicyEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.PolicyEnum.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.ServiceBrokerEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.ServiceBrokerEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.ServiceBrokerEnum.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.Notebook.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.Notebook.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.Notebook.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.SmoExtended.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.SmoExtended.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.SmoExtended.xml",
+        "lib/netstandard2.0/Microsoft.SqlServer.SqlEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.SqlEnum.pdb",
+        "lib/netstandard2.0/Microsoft.SqlServer.SqlEnum.xml",
+        "microsoft.sqlserver.sqlmanagementobjects.161.44091.28.nupkg.sha512",
+        "microsoft.sqlserver.sqlmanagementobjects.nuspec",
+        "nuspecicon.png"
+      ]
+    },
+    "Newtonsoft.Json/11.0.1": {
+      "sha512": "pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "System.IdentityModel.Tokens.Jwt/5.6.0": {
+      "sha512": "KMvPpX4exs2fe7Upq5zHMSR4yupc+jy8WG8yjucZL0XvT+r/T0hRvLIe9fP/SeN8/UVxFYBRAkRI5k1zbRGqmA==",
+      "type": "package",
+      "path": "system.identitymodel.tokens.jwt/5.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net451/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net451/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
+        "system.identitymodel.tokens.jwt.5.6.0.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Dapper >= 2.0.35",
+      "Microsoft.SqlServer.SqlManagementObjects >= 161.44091.28"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Harun\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj",
+      "projectName": "TodoApp",
+      "projectPath": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\TodoApp.csproj",
+      "packagesPath": "C:\\Users\\Harun\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Harun\\source\\repos\\TodoApp\\TodoApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.35, )"
+          },
+          "Microsoft.SqlServer.SqlManagementObjects": {
+            "target": "Package",
+            "version": "[161.44091.28, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
